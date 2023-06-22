@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Yeseva+One&display=swap" rel="stylesheet">
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .header{
+      width: 1262px ;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 8px;
+      display: flex;
+      /* border-bottom: solid rgba(14, 37, 75, 0.6);; */
+    }
+    .header img{
+      width: 100px;
+      height: 25px;
+      float: left;
+     
+    }
+    .number{
+      width: 168px;
+height: 30px;
+      background: #F4F6F9;
+      border-radius: 50px;
+      color: rgba(14, 37, 75, 0.6);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 20px;
+      gap: 10px;
+      float: left;
+      margin-left: 34px;
+      font-size: 14px;
+      font-family: Inter;
+      font-weight: 500;
+      line-height: 20px;
+    }
+    .wats{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 20px;
+      gap: 10px;
+      background: #F4F6F9;
+      width: 55px;
+      height: 30px;
+      border-radius: 41px;
+      float: left;
+      margin-left: 6px;
+    }
+    .wats img{
+      width: 14px;
+      height: 14px;
+    }
+    .tg{
+      width: 55px;
+      height: 30px;
+      background: rgba(14, 37, 75, 0.05);
+      border-radius: 41px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 20px;
+      gap: 10px;
+      /* вопрос */
+      margin-left: 6px;
+      
+    }
+    .tg img{
+      width: 19.25px;
+      height: 15.95px;
+    }
+    .txt ul{
+      list-style-type: none;
+    }
+    .txt li{
+      display: inline-block;
+      margin-right: 24px;
+      text-align: center;
+      font-size: 13px;
+      font-family: Inter;
+      line-height: 20px;
+    }
+    .txt{
+      position: relative;
+      left: 155px;
+    }
+   .cont{
+    display: flex;
+    position: relative;
+    left: 150px;
+   }
+    .cont .vk {
+      width: 36px;
+      height: 30px;
+      background: #F4F6F9;
+      border-radius: 41px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 20px;
+      gap: 10px;
+    }
+      .vk img{
+        width: 23.21px;
+        height: 13px;
+      }
+      .inst{
+        width: 36px;
+        height: 30px;
+        background: #F4F6F9;
+        border-radius: 41px;
+        display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 20px;
+      gap: 10px;
+      }
+      .inst img{
+        width: 19px;
+        height: 19px;
+      }
+     .en{
+      margin-left: 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      }
+      .countries{
+        width: 1262px ;
+        height: 59px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 8px;
+      
+      }
+      .count{
+        display: flex;
+        flex-direction: row;
+      /* justify-content:space-between; */
+      align-items: center;
+   
+      }
+      .count span{
+        margin-left: 9px;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 600;
+        line-height: 20px;
+      }
+      .count div{
+        margin-left: 40px;
+      }
+      .order{
+        display: flex;
+        width: 203px;
+        height: 36px;
+        background: #FF6B17;
+        border-radius: 50px;
+      background-image: url('img/shopping-bag.png');
+      background-repeat: no-repeat;
+      background-position: 5px 7px;
+        /* justify-content: space-between;
+        flex-direction: row;
+      justify-content: center;
+      align-items: center; */
+      }
+      .price{
+        width: 41px;
+        height: 24px;
+        background: #FFFFFF;
+        border-radius: 22px;
+        display: flex;
+        position: relative;
+        left: 69px;
+        bottom: 13px;
+      }
+      .order .bag p{
+        align-self: center;
+      }
+      .fav{
+        width: 64px;
+        height: 36px;
+        background: #F4F6F9;
+        border-radius: 50px;
+        display: flex;
+        position: relative;
+        left: 100px;
+        justify-content: center;
+      }
+      .fav .numb{
+        width: 22px;
+        height: 22px;
+        background: #FF6B17;
+        border-radius: 50px;
+        position: relative;
+        top: 8px;
+        right: 10px;
+        align-items: ;
+        color: white;
+      }
+      .mainph{
+        background-image: url('img/mainph.png');
+        
+        height: 478px;
+        margin-left: auto;
+      margin-right: auto;
+      border-radius: 22px;
+      margin-top: 21px;
+      
+      }
+      .ramka{
+        width: 529px;
+        height: 224px;
+        background: rgba(180, 201, 230, 0.2);
+        border: 1px solid rgba(244, 246, 250, 0.23);
+        backdrop-filter: blur(10px);
+/* Note: backdrop-filter has minimal browser support */
+        border-radius: 20px;
+       margin-left: 700px;
+       margin-top: 100px; 
+  color: white;
+      }
+      .ramka h1{
+        text-align: center;
+        padding-top: 34px;
+      }
+      .ramka p{
+        text-align: center;
+        padding: 35px 43px 37px 34px;
+        font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+letter-spacing: -0.015em;
+      }
+      .fav img{
+        width: 10px;
+        height: 14.86px;
+        position: relative;
+        left: 15px;
+        top: 10px;
+      }
+      .bag p{
+        align-items: center;
+      color: white;
+      }
+      .lable :first-of-type{
+        position: relative ;
+        top: 370px;
+        left: 83px;
+      }
+      .lable :nth-child(2){
+        position: relative ;
+        top: 365px;
+        left: -60px;
+      }
+      .mininav span{
+        color: rgba(14, 37, 75, 0.6);
+      }
+      .list{
+        margin-top: 60px;
+      }
+      .list ul{
+        list-style-type: none;
+      }
+      .list ul li{
+        display: inline;
+        text-align: center;
+        width: 81px;
+        height: 34px;
+        background: #F4F6F9;
+        border-radius: 50px;
+        padding-right: 12px;
+        color: rgba(14, 37, 75, 0.6);
+
+      }
+      .name img{
+        width: 85px;
+        height: 44px;
+        display: flex;
+        
+      }
+      /* .name span{
+        display: inline;
+        height: 38px;
+        vertical-align: middle;
+        
+      } */
+      .fil {
+        height: 43px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 38px;
+        margin-bottom: 25px;
+        align-items: center;
+      }
+      .time{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        width: 299px;
+        height: 44px;
+        background: #F4F6F9;
+        border-radius: 10px;
+        background-image: url('img/time.png');
+        background-repeat: no-repeat;
+        background-position: 7px 11px;
+      }
+      .note{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        width: 251px;
+        height: 44px;
+        background: #F4F6F9;
+        border-radius: 10px;
+        background-image: url('img/note.png');
+        background-repeat: no-repeat;
+        background-position: 7px 11px;
+      }
+      .car{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        width: 199px;
+        height: 44px;
+        background: #F4F6F9;
+        border-radius: 10px;
+        background-image: url('img/car.png');
+        background-repeat: no-repeat;
+        background-position: 7px 11px;
+      }
+      .filters{
+        display: flex;
+      }
+      .filters p{
+        padding: 7px 5px 5px 20px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+      }
+      .filters div{
+        margin-left: 17px;
+      }
+       .grid1{
+        display: grid;
+        grid-template-columns: 310px 310px 310px 310px;
+        grid-template-rows: 420px;
+        grid-column-gap: 10px;
+       }
+      .grid1 div{
+        /* width: 310px;
+        height: 420px; */
+        background: #FFFFFF;
+        border: 1.5px solid #F4F6F9;
+        box-shadow: 0px 6px 20px rgba(73, 78, 86, 0.06);
+        border-radius: 20px;
+
+      }
+      .grid1 img{
+        border-radius: 20px;
+      }
+      .grid1 span{
+        color: rgba(14, 37, 75, 0.6);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+      }
+      .grid1 h3{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+      }
+      .grid1 h5{
+        font-size: 22px;
+        font-family: Montserrat;
+        font-weight: 700;
+        color: rgba(52, 133, 255, 1);
+        position: relative;
+        top: 80px;
+        left: 20px;
+      }
+      .grid1 .cr{
+        position: relative;
+        top: 60px;
+      }
+      </style>
+</head>
+<body>
+  <div class="header">
+    <img src="img/lable.png" alt="lable">
+    <div class="message">
+      <div class="number">+7 921 400-50-20</div>
+      <div class="wats"><img src="img/wats.png"></div>
+      <div class="tg"><img src="img/telegr.png"></div>
+    </div>
+    <div class="txt">
+      <ul>
+        <li>Праздники и события</li>
+        <li>Подарочный сертификат</li>
+        <li>Партнёрам</li>
+        <li>Путеводитель</li>
+      </ul>
+    </div>
+    <div class="cont">
+      <div class="vk"><img src="img/vk.png"></div>
+      <div class="inst"><img src="img/inst.png"></div>
+      <div class="en">EN</div>
+    </div>
+  </div>
+  <div class="countries">
+    <div class="count">
+      <div class="stamb"><img src="img/turkisg.png" alt="turkiye"><span>Стамбул</span></div>
+      <div class="dubai"><img src="img/dubai.png" alt="dubai"><span>Дубай</span></div>
+      <div class="stamb"><img src="img/rus.png" alt="russia"><span>Санкт-Петербург</span></div>
+
+      <div class="order">
+        <div class="bag"><p>Ваш заказ</p> 
+          <div class="price"><span>0&#8381;</span></div>
+        </div>
+
+        <div class="fav"><img src="img/fav.png" alt="fav"> <div class="numb">0</div>
+      </div>
+    </div>
+  </div>
+  <div class="mainph">
+    <div class="lable">
+      <img src="img/Кураж-Вояж.png" alt="lable">
+      <img src="img/Vector.png" alt="line">
+    </div>
+    <div class="ramka">
+      <h1>Яхтенное меню</h1>
+      <p>Здесь вы можете заказать еду в вояж. Сделайте это в любое время, заблаговременно до старта вояжа. Минимальное время заказа указано рядом с названием каждого ресторана.</p>
+    </div>
+  </div>
+  <div class="mininav"><span>Главная / Яхтенное меню </span></div>
+  <div class="list">
+    <ul>
+      <li>Роллы</li>
+      <li>Вино</li>
+      <li>Пицца</li>
+      <li>Устрицы</li>
+      <li>Острое</li>
+      <li>Новинки</li>
+    </ul>
+  </div>
+  <div class="fil">
+    <div class="name>"><img src="img/futura.png"> <span>Футура</span></div>
+    <div class="filters">
+    <div class="time"><p>Заказать не позднее чем за: 3 часа</p></div>
+    <div class="note"><p>Минимальный заказ: 5000 ₽</p></div>
+    <div class="car"><p>Доставка: бесплатно</p></div>
+  </div>
+</div>
+</style>
+</head>
+<body>
+  <div class="header">
+    <img src="img/lable.png" alt="lable">
+    <div class="message">
+      <div class="number">+7 921 400-50-20</div>
+      <div class="wats"><img src="img/wats.png"></div>
+      <div class="tg"><img src="img/telegr.png"></div>
+    </div>
+    <div class="txt">
+      <ul>
+        <li>Праздники и события</li>
+        <li>Подарочный сертификат</li>
+        <li>Партнёрам</li>
+        <li>Путеводитель</li>
+      </ul>
+    </div>
+    <div class="cont">
+      <div class="vk"><img src="img/vk.png"></div>
+      <div class="inst"><img src="img/inst.png"></div>
+      <div class="en">EN</div>
+    </div>
+  </div>
+  <div class="countries">
+    <div class="count">
+      <div class="stamb"><img src="img/turkisg.png" alt="turkiye"><span>Стамбул</span></div>
+      <div class="dubai"><img src="img/dubai.png" alt="dubai"><span>Дубай</span></div>
+      <div class="stamb"><img src="img/rus.png" alt="russia"><span>Санкт-Петербург</span></div>
+
+      <div class="order">
+        <div class="bag"><p>Ваш заказ</p> 
+          <div class="price"><span>0&#8381;</span></div>
+        </div>
+
+        <div class="fav"><img src="img/fav.png" alt="fav"> <div class="numb">0</div>
+      </div>
+    </div>
+  </div>
+  <div class="mainph">
+    <div class="lable">
+      <img src="img/Кураж-Вояж.png" alt="lable">
+      <img src="img/Vector.png" alt="line">
+    </div>
+    <div class="ramka">
+      <h1>Яхтенное меню</h1>
+      <p>Здесь вы можете заказать еду в вояж. Сделайте это в любое время, заблаговременно до старта вояжа. Минимальное время заказа указано рядом с названием каждого ресторана.</p>
+    </div>
+  </div>
+  <div class="mininav"><span>Главная / Яхтенное меню </span></div>
+  <div class="list">
+    <ul>
+      <li>Роллы</li>
+      <li>Вино</li>
+      <li>Пицца</li>
+      <li>Устрицы</li>
+      <li>Острое</li>
+      <li>Новинки</li>
+    </ul>
+  </div>
+  <div class="fil">
+    <div class="name>"><img src="img/futura.png"> <span>Футура</span></div>
+    <div class="filters">
+    <div class="time"><p>Заказать не позднее чем за: 3 часа</p></div>
+    <div class="note"><p>Минимальный заказ: 5000 ₽</p></div>
+    <div class="car"><p>Доставка: бесплатно</p></div>
+  </div>
+</div>
+<div class="grid1">
+  <div class="fries">
+    <img src="img/fries.png" alt="fries">
+    <h3>Чипсы, 50гр</h3>
+    <span>Вкус: соль.</span>
+    <h5>120 ₽</h5>
+  </div>
+  <div class="straw">
+    <img src="img/straw.png" alt="strawberry">
+    <h3>Клубника, 50гр</h3>
+    <span>Кусочками.</span>
+    <h5>250 ₽</h5>
+  </div>
+  <div class="hamon">
+    <img src="img/hamon.png" alt="hamon">
+    <h3>Печеный хумус с бастурмой, 60гр</h3>
+    <span>Нут, тахини, винный уксус, кумин, паприка, бастурма.</span>
+    <h5 class="cr">200 ₽</h5>
+  </div>
+  <div class="croasante">
+    <img src="img/croiss.png" alt="croissant">
+    <h3>Круассаны, 70гр</h3>
+    <span>Сливочный сыр, копченый лосось, лисонный сок.</span>
+    <h5 class="cr">170 ₽</h5>
+  </div>
+</div>
+</body>
+</html>
