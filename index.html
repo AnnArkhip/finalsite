@@ -6,15 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Yeseva+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Yeseva+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Yeseva+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
   <style>
     *{
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-    .header{
+    .all{
+      margin-left: auto;
+      margin-right: auto;
+}
+.header{
       width: 1262px ;
       margin-left: auto;
       margin-right: auto;
@@ -89,7 +97,7 @@ height: 30px;
     }
     .txt li{
       display: inline-block;
-      margin-right: 24px;
+      margin-right: 20px;
       text-align: center;
       font-size: 13px;
       font-family: Inter;
@@ -97,12 +105,12 @@ height: 30px;
     }
     .txt{
       position: relative;
-      left: 155px;
+      left: 100px;
     }
    .cont{
     display: flex;
     position: relative;
-    left: 150px;
+    left: 120px;
    }
     .cont .vk {
       width: 36px;
@@ -144,19 +152,18 @@ height: 30px;
       align-items: center;
       }
       .countries{
+        display: flex;
+        justify-content: space-between;
         width: 1262px ;
         height: 59px;
       margin-left: auto;
       margin-right: auto;
       margin-top: 8px;
-      
       }
       .count{
         display: flex;
         flex-direction: row;
-      /* justify-content:space-between; */
-      align-items: center;
-   
+      
       }
       .count span{
         margin-left: 9px;
@@ -167,9 +174,15 @@ height: 30px;
       }
       .count div{
         margin-left: 40px;
+        text-decoration: none;
+      }
+      .count a{
+        text-decoration: none;
       }
       .order{
         display: flex;
+        right: 150px;
+        position: relative;
         width: 203px;
         height: 36px;
         background: #FF6B17;
@@ -189,11 +202,20 @@ height: 30px;
         border-radius: 22px;
         display: flex;
         position: relative;
-        left: 69px;
+        left: 150px;
         bottom: 13px;
+        align-items: center;
+      }
+      .pri {
+position: relative;
+left: 10px;
       }
       .order .bag p{
-        align-self: center;
+        position: relative;
+        left: 50px;
+        top: 7px;
+        color: white;
+        
       }
       .fav{
         width: 64px;
@@ -202,7 +224,7 @@ height: 30px;
         border-radius: 50px;
         display: flex;
         position: relative;
-        left: 100px;
+        left: 200px;
         justify-content: center;
       }
       .fav .numb{
@@ -212,18 +234,30 @@ height: 30px;
         border-radius: 50px;
         position: relative;
         top: 8px;
-        right: 10px;
-        align-items: ;
+        right: -10px;
+        
         color: white;
       }
+      .fav img{
+        position: relative;
+        top: 10px;
+        width: 10px;
+        height: 14.858px;
+
+      }
+      .fav .zero {
+        position: relative;
+        left: 7px;
+        top: 3px;
+      }
       .mainph{
-        background-image: url('img/mainph.png');
-        
+        background-image: url('img/mainph.png');             
         height: 478px;
         margin-left: auto;
-      margin-right: auto;
-      border-radius: 22px;
-      margin-top: 21px;
+        margin-right: auto;
+        border-radius: 22px;
+        margin-top: 21px;
+        width: 1500px;
       
       }
       .ramka{
@@ -234,9 +268,9 @@ height: 30px;
         backdrop-filter: blur(10px);
 /* Note: backdrop-filter has minimal browser support */
         border-radius: 20px;
-       margin-left: 700px;
-       margin-top: 100px; 
-  color: white;
+        margin-left: 700px;
+        margin-top: 100px; 
+        color: white;
       }
       .ramka h1{
         text-align: center;
@@ -246,23 +280,12 @@ height: 30px;
         text-align: center;
         padding: 35px 43px 37px 34px;
         font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 130%;
-/* or 23px */
-letter-spacing: -0.015em;
-      }
-      .fav img{
-        width: 10px;
-        height: 14.86px;
-        position: relative;
-        left: 15px;
-        top: 10px;
-      }
-      .bag p{
-        align-items: center;
-      color: white;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+        /* or 23px */
+        letter-spacing: -0.015em;
       }
       .lable :first-of-type{
         position: relative ;
@@ -277,8 +300,17 @@ letter-spacing: -0.015em;
       .mininav span{
         color: rgba(14, 37, 75, 0.6);
       }
+      .mininav{
+        margin-left: auto;
+        margin-right: auto;
+        width: 1262px;
+height: 59px;
+      }
       .list{
-        margin-top: 60px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1262px;
       }
       .list ul{
         list-style-type: none;
@@ -295,17 +327,21 @@ letter-spacing: -0.015em;
 
       }
       .name img{
-        width: 85px;
+        width: 111px;
         height: 44px;
         display: flex;
+       
         
       }
-      /* .name span{
-        display: inline;
-        height: 38px;
-        vertical-align: middle;
-        
-      } */
+       .probr{
+        font-family: Montserrat;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: relative;
+        bottom: 10px;
+      } 
       .fil {
         height: 43px;
         display: flex;
@@ -313,6 +349,9 @@ letter-spacing: -0.015em;
         margin-top: 38px;
         margin-bottom: 25px;
         align-items: center;
+      margin-left: auto;
+        margin-right: auto;
+        width: 1262px;
       }
       .time{
         display: flex;
@@ -370,11 +409,14 @@ letter-spacing: -0.015em;
       .filters div{
         margin-left: 17px;
       }
-       .grid1{
+      .grid1{
         display: grid;
         grid-template-columns: 310px 310px 310px 310px;
         grid-template-rows: 420px;
         grid-column-gap: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1262px;
        }
       .grid1 div{
         /* width: 310px;
@@ -416,15 +458,274 @@ letter-spacing: -0.015em;
         position: relative;
         top: 60px;
       }
-</style>
+      .grid2{
+        display: grid;
+        grid-template-columns: 640px 640px;
+        grid-template-rows: 420px 420px;
+        grid-column-gap: 10px;
+        margin-top: 30px;
+        height: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1262px;
+      }
+      .nabor1 img:first-of-type {
+     float: left;
+      }
+      .grid2 img{
+        border-radius: 20px;
+      }
+      .grid2 h5{
+        font-size: 22px;
+        font-family: Montserrat;
+        font-weight: 700;
+        color: rgba(52, 133, 255, 1);
+        position: relative;
+        top: 80px;
+        left: 20px;
+      }
+      .grid2 h3{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+      }
+      .grid2 span{
+        color: rgba(14, 37, 75, 0.6);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+      }
+      .grid2 div{
+        border-radius: 20px;
+        background: var( #FFFFFF);
+        box-shadow: 0px 6px 20px 0px rgba(73, 78, 86, 0.06);
+      }
+      .bg{
+        width: 1300px;
+height: 530px;
+        padding-bottom: 120px;
+        padding-top: 40px;
+        padding-left: 50px;
+        background-color: lightblue;
+        border-radius: 30px;
+        position: relative;
+        top: 40px;
+        left: 200px;
+       }
+      
+       .item  h5{
+        font-size: 22px;
+        font-family: Montserrat;
+        font-weight: 700;
+        color: rgba(52, 133, 255, 1);
+        position: relative;
+        top: 30px;
+        left: 20px;
+      }
+    .item  h3{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;}
+      .item  span{
+        color: rgba(14, 37, 75, 0.6);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;}
+      .item  img{
+        border-radius: 20px;
+        width: 310px;
+        height: 240px;
+      }
+     .item {
+      width: 250px;
+        height: 420px;
+        background: #FFFFFF;
+        border: 1.5px solid #F4F6F9;
+        box-shadow: 0px 6px 20px rgba(73, 78, 86, 0.06);
+        border-radius: 20px ;
+        position: static;
+        
+      }
+      /* .item{
+        padding-left: 90px;
+      } */
+      .owl-carousel .owl-theme{
+        border-radius: 20px ;
+        padding-left: 150px;
+      }
+      .sklad img{
+        width: 111px;
+        height: 44px;
+      }
+      .sklad h2{
+        display: inline-block;
+        position: relative;
+        color: var(--unnamed, #0E254B);
+        font-family: Montserrat;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        bottom: 10px;
+        padding-left: 20px;
+      }
+      .gridtxt{
+        margin-left: auto;
+        margin-right: auto;
+        width: 1262px;
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 420px 420px 420px ;
+        grid-template-rows: 218px 218px 218px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+       
+      }
+      .gridtxt div:nth-child(even){
+        background: rgba(213, 229, 251, 1);
+      }
+      .gridtxt div:nth-child(odd){
+        background: var(--unnamed, #F4F6F9);
+      }
+      .gridtxt p{
+        padding-top: 30px;
+padding-left: 20px;
+color: var(--unnamed, #0E254B);
+
+/* Заголовок карточки */
+font-size: 18px;
+font-family: Inter;
+font-style: normal;
+font-weight: 600;
+line-height: 130%;
+letter-spacing: -0.27px;
+      }
+      .gridtxt div {
+        border-radius: 20px;
+        
+      }
+      .gridtxt img{
+        position: relative;
+        left: 350px;
+        top: 50px;
+      }
+      .sec img{
+        position: relative;
+        top: 8px;
+
+      }
+      .footer{
+        display: flex;
+        flex-shrink: 0;
+        margin: 0 auto;
+        width: 100vw;
+height: 378px;
+margin-right: 1700px;
+background: #4F4F4F;
+}
+.footer img{
+  width: 147px;
+height: 36.75px;
+position: relative;
+top: 70px;
+left: 210px;
+}
+.mess img{
+  width: 50.127px;
+height: 41.772px;
+}
+.mess{
+  position: relative;
+  top: 50px;
+  right: 150px;
+}
+  .info span{
+    color: #FFF;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      position: relative;
+      top: 200px;
+      right: 40px;
+  }
+ .input{
+  display: flex;
+height: 48px;
+align-items: flex-start;
+width: 420px;
+background-color: white;
+border-radius: 90px;
+border: 1px solid var(--unnamed, #FFF);
+position: relative;
+top:250px;
+right: 300px;
+
+ }
+ .input span{
+  position: relative;
+  top: 10px;
+  left: 20px;
+  color: rgba(14, 37, 75, 1);
+ }
+ .button{
+  border-radius: 50px;
+background: var(--unnamed, #D5E5FB);
+height: 48px;
+padding: 20px 30px;
+width: 166px;
+position: relative;
+left: 110px;
+bottom: 1px;
+color: rgba(14, 37, 75, 1);
+ }
+ .button span{
+  position: relative;
+  top: -5px;
+  left: 15px;
+ }
+ .ul ul li{
+list-style-type: none;
+color:  #FFF;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%;
+position: relative;
+top: 100px;
+margin-left: 50px;
+ }
+ .ul .first{
+  position: relative;
+
+ }
+.ul h3{
+  color: white;
+  position: relative;
+  top: 90px;
+left: 50px;
+}
+     </style>
+  </style>
 </head>
 <body>
-  <div class="header">
-    <img src="img/lable.png" alt="lable">
-    <div class="message">
-      <div class="number">+7 921 400-50-20</div>
-      <div class="wats"><img src="img/wats.png"></div>
-      <div class="tg"><img src="img/telegr.png"></div>
+  <div class="all">
+    <div class="header">
+      <img src="img/lable.png" alt="lable">
+      <div class="message">
+        <div class="number">+7 921 400-50-20</div>
+        <div class="wats"><img src="img/wats.png"></div>
+        <div class="tg"><img src="img/telegr.png"></div>
     </div>
     <div class="txt">
       <ul>
@@ -438,77 +739,286 @@ letter-spacing: -0.015em;
       <div class="vk"><img src="img/vk.png"></div>
       <div class="inst"><img src="img/inst.png"></div>
       <div class="en">EN</div>
-    </div>
+    
   </div>
-  <div class="countries">
-    <div class="count">
-      <div class="stamb"><img src="img/turkisg.png" alt="turkiye"><span>Стамбул</span></div>
-      <div class="dubai"><img src="img/dubai.png" alt="dubai"><span>Дубай</span></div>
-      <div class="stamb"><img src="img/rus.png" alt="russia"><span>Санкт-Петербург</span></div>
+    </div>
 
-      <div class="order">
-        <div class="bag"><p>Ваш заказ</p> 
-          <div class="price"><span>0&#8381;</span></div>
+    <div class="countries">
+      
+        <div class="count">
+          <div class="stamb"><a target="_blank" href="stambul.html"> <img src="img/turkisg.png" alt="turkiye"><span>Стамбул</span></a></div>
+          <div class="dubai"><a target="_blank" href="dubai.html"><img src="img/dubai.png" alt="dubai"><span>Дубай</span></a></div>
+          <div class="stamb"><img src="img/rus.png" alt="russia"><span>Санкт-Петербург</span></div>
         </div>
+        <div class="order">
+          <div class="bag"><p>Ваш заказ</p> 
+          <div class="price">  <span class="pri">0&#8381;</span></div>
+        </div>
+  
+          <div class="fav"><img src="img/fav.png" alt="fav"> <div class="numb"><span class="zero">0</span></div>
+          </div>
+        </div>
+    </div>
 
-        <div class="fav"><img src="img/fav.png" alt="fav"> <div class="numb">0</div>
+
+    <div class="mainph">
+      <div class="lable">
+        <img src="img/Кураж-Вояж.png" alt="lable">
+        <img src="img/Vector.png" alt="line">
       </div>
+      <div class="ramka">
+        <h1>Яхтенное меню</h1>
+        <p>Здесь вы можете заказать еду в вояж. Сделайте это в любое время, заблаговременно до старта вояжа. Минимальное время заказа указано рядом с названием каждого ресторана.</p>
+      </div>
+    
     </div>
-  </div>
-  <div class="mainph">
-    <div class="lable">
-      <img src="img/Кураж-Вояж.png" alt="lable">
-      <img src="img/Vector.png" alt="line">
+
+
+    
+      <div class="mininav"><span>Главная / Яхтенное меню </span></div>
+      <div class="list">
+        <ul>
+          <li>Роллы</li>
+          <li>Вино</li>
+          <li>Пицца</li>
+          <li>Устрицы</li>
+          <li>Острое</li>
+          <li>Новинки</li>
+        </ul>
+      </div>
+    <div class="fil">
+      <div class="name>"><img src="img/pro.png"> <span class="probr">ProBrbnch</span></div>
+      <div class="filters">
+      <div class="time"><p>Заказать не позднее чем за: 2 часа</p></div>
+      <div class="note"><p>Минимальный заказ: 3000 ₽</p></div>
+      <div class="car"><p>Доставка: 500 ₽</p></div>
     </div>
-    <div class="ramka">
-      <h1>Яхтенное меню</h1>
-      <p>Здесь вы можете заказать еду в вояж. Сделайте это в любое время, заблаговременно до старта вояжа. Минимальное время заказа указано рядом с названием каждого ресторана.</p>
+
     </div>
+    <div class="grid1"> 
+
+      <div class="fries">
+      <img src="img/fries.png" alt="fries">
+      <h3>Чипсы, 50гр</h3>
+      <span>Вкус: соль.</span>
+      <h5>120 ₽</h5>
+    </div>
+    <div class="straw">
+      <img src="img/straw.png" alt="strawberry">
+      <h3>Клубника, 50гр</h3>
+      <span>Кусочками.</span>
+      <h5>250 ₽</h5>
+    </div>
+    <div class="hamon">
+      <img src="img/hamon.png" alt="hamon">
+      <h3>Печеный хумус с бастурмой, 60гр</h3>
+      <span>Нут, тахини, винный уксус, кумин, паприка, бастурма.</span>
+      <h5 class="cr">200 ₽</h5>
+    </div>
+    <div class="croasante">
+      <img src="img/croiss.png" alt="croissant">
+      <h3>Круассаны, 70гр</h3>
+      <span>Сливочный сыр, копченый лосось, лисонный сок.</span>
+      <h5 class="cr">170 ₽</h5>
+    </div>
+      
+    </div>
+    
+      <div class="grid2">
+        <div class="nabor1">
+          <img src="img/eda.png" alt="food">
+          <img src="img/food.png" alt="food">
+          <h3>Набор для двоих, 580гр</h3>
+          <img src="img/Users.svg" alt="users">
+          <span>На 2 персоны</span><br>
+        <span>Багет, ржанная чиабатта, вафли, гриссини, мусс из цветной капусты с беконом, паштет с вишневым конфи, ассорти сыров и мясных</span>
+        <h5 class="cr">2375 ₽</h5>
+        </div>
+        <div class="nabor2">
+          <img src="img/eda2.png" alt="food">
+          <img src="img/kolbasa.png" alt="food">
+          <img src="img/wine.png" alt="wine">
+          <h3>Большой набор , 1100гр</h3>
+          <img src="img/Users.svg" alt="users">
+          <span>На 4 персоны</span><br>
+        <span>Ассорти мясных деликатесов, ассорти сыров и антипасти, хлебная корзина, парфе из птицы с фисташкой, гуаккамоле, хумус с брезаолой, риет из</span>
+        <h5 class="cr">4000 ₽</h5>
+        </div>
+      </div>
+      <div class="fil">
+        <div class="name>"><img src="img/futura.png"> <span class="probr">Футура</span></div>
+        <div class="filters">
+        <div class="time"><p>Заказать не позднее чем за: 3 часа</p></div>
+        <div class="note"><p>Минимальный заказ: 5000 ₽</p></div>
+        <div class="car"><p>Доставка: бесплатно</p></div>
+      </div>
+      </div>
+      <div class="grid1"> 
+
+        <div class="fries">
+        <img src="img/fries.png" alt="fries">
+        <h3>Чипсы, 50гр</h3>
+        <span>Вкус: соль.</span>
+        <h5>120 ₽</h5>
+      </div>
+      <div class="straw">
+        <img src="img/straw.png" alt="strawberry">
+        <h3>Клубника, 50гр</h3>
+        <span>Кусочками.</span>
+        <h5>250 ₽</h5>
+      </div>
+      <div class="hamon">
+        <img src="img/hamon.png" alt="hamon">
+        <h3>Печеный хумус с бастурмой, 60гр</h3>
+        <span>Нут, тахини, винный уксус, кумин, паприка, бастурма.</span>
+        <h5 class="cr">200 ₽</h5>
+      </div>
+      <div class="croasante">
+        <img src="img/croiss.png" alt="croissant">
+        <h3>Круассаны, 70гр</h3>
+        <span>Сливочный сыр, копченый лосось, лисонный сок.</span>
+        <h5 class="cr">170 ₽</h5>
+      </div>
+      </div>
+      <div class="grid2">
+        <div class="nabor1">
+          <img src="img/eda.png" alt="food">
+          <img src="img/food.png" alt="food">
+          <h3>Набор для двоих, 580гр</h3>
+          <img src="img/Users.svg" alt="users">
+          <span>На 2 персоны</span><br>
+        <span>Багет, ржанная чиабатта, вафли, гриссини, мусс из цветной капусты с беконом, паштет с вишневым конфи, ассорти сыров и мясных</span>
+        <h5 class="cr">2375 ₽</h5>
+        </div>
+        <div class="nabor2">
+          <img src="img/eda2.png" alt="food">
+          <img src="img/kolbasa.png" alt="food">
+          <img src="img/wine.png" alt="wine">
+          <h3>Большой набор , 1100гр</h3>
+          <img src="img/Users.svg" alt="users">
+          <span>На 4 персоны</span><br>
+        <span>Ассорти мясных деликатесов, ассорти сыров и антипасти, хлебная корзина, парфе из птицы с фисташкой, гуаккамоле, хумус с брезаолой, риет из</span>
+        <h5 class="cr">4000 ₽</h5>
+        </div>
+      </div>
+      <div class="bg">
+        <div class="sklad"><img src="img/sklad.png"><h2>Винный вояж
+          & Винный склад</h2></div>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="img/wine1.png" alt="wine">
+             <h3>Toucas, Vinho Verde DOC, 2021</h3>
+               <span>Португалия, белое полусухое 9,5%</span>
+               <h5>9950 ₽</h5>
+           </div>
+            <div class="item"><img src="img/wine2.png" alt="wine">
+           
+             <h3>Pago Casa Gran, Falcata White, 
+              Valencia DO, 2021</h3>
+             <span>Португалия, белое полусухое 9,5%</span>
+             <h5>12800 ₽</h5>
+           </div>
+            <div class="item"><img src="img/wine3.png" alt="wine">
+           
+             <h3>Belguardo Vermentino, Toscana 
+              IGT, 2020</h3>
+             <span>Португалия, белое полусухое 9,5%</span>
+             <h5>10900 ₽</h5>
+           </div>
+            <div class="item"><img src="img/wine4.png" alt="wine">
+           
+             <h3>Loveblock Pinot Gris, Porto 2020</h3>
+             <span>Португалия, белое полусухое 9,5%</span>
+             <h5>11300 ₽</h5>
+           
+           </div>
+            <div class="item"><img src="img/wine.png" alt="wine">
+           
+             <h3>Goan Ristolog, Van Volhem 2021</h3>
+             <span>Шампань,игристое.</span>
+             <h5>9200 ₽</h5>
+           
+           </div>
+            
+        </div>
+       </div>
+   
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 50,
+                    nav: true,
+                    autoplay: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 3
+                        },
+                        1000: {
+                            items: 5
+                        }
+                    }
+                })
+            });
+        </script>
+    <div class="gridtxt">
+      <div><p>Меню можно заказать в любое время после бронирования вояжа, уже когда вы посоветуетесь со всеми гостями</p><img src="img/att.svg"></div>
+      <div class="sec"><p>У некоторых ресторанов есть минимальный заказ. Меньше чем на указанную сумму заказать нельзя. Если вы заказываете еду из разных мест, то порог минимального заказа нужно превысить для каждого. </p><img src="img/att.svg"></div>
+      <div><p>За доставку вашего заказа отвечаем мы. Прямо на лодку заказ доставит курьер, а мы заберём. Будет ждать вас на борту. </p><img src="img/att.svg"></div>
+      <div><p>За доставку вашего заказа отвечаем мы. Прямо на лодку заказ доставит курьер, а мы заберём. Будет ждать вас на борту. </p><img src="img/att.svg"></div>
+      <div><p>Меню можно заказать в любое время после бронирования вояжа, уже когда вы посоветуетесь со всеми гостями</p><img src="img/att.svg"></div>
+      <div><p>Меню можно заказать в любое время после бронирования вояжа, уже когда вы посоветуетесь со всеми гостями</p><img src="img/att.svg"></div>
+    </div>
+    <div class="footer">
+      <div class="container"></div>
+      <img src="img/wlable.png" alt="lable">
+      <div class="mess"><img src="img/Telegram.png" alt="vk">
+      <img src="img/Telegram-2.png" alt="inst">
+    </div>
+    <div class="info"><span>Подписка на эксклюзивные новости</span></div>
+    <div class="input"><span>moyapochta@mail.ru</span><div class="button"><span>Подписаться</span></div></div>
+      
+    <DIV class="ul">
+        <ul class="first">
+          <h3>         О нас
+          </h3>
+          <li>О компании</li>
+          <li>Команда</li>
+          <li>Кейтеринг</li>
+          <li>Частые вопросы</li>
+          <li>Блог</li>
+        </ul>
+      </DIV>
+<div class="ul">
+        <ul class="second">
+          <h3>Вояжи</h3>
+          <li>Вояж в Петергоф</li>
+          <li>По Ладожским шахерам</li>
+          <li>Люди на катерах</li>
+          <li>День ВМФ</li>
+          <li>Вояж в крепость Орешек</li>
+          <li>Вояж в Кронштадт</li>
+        </ul>
+      </div>
+      <div class="ul">
+        <ul class="third">
+         <h3>Катера</h3> 
+          <li>Эль Чапа</li>
+          <li>Princess 25M</li>
+          <li>Meridian</li>
+          <li>Виндзора</li>
+         
+        </ul>
+      </DIV>
+
+
   </div>
-  <div class="mininav"><span>Главная / Яхтенное меню </span></div>
-  <div class="list">
-    <ul>
-      <li>Роллы</li>
-      <li>Вино</li>
-      <li>Пицца</li>
-      <li>Устрицы</li>
-      <li>Острое</li>
-      <li>Новинки</li>
-    </ul>
+      </div>
   </div>
-  <div class="fil">
-    <div class="name>"><img src="img/futura.png"> <span>Футура</span></div>
-    <div class="filters">
-    <div class="time"><p>Заказать не позднее чем за: 3 часа</p></div>
-    <div class="note"><p>Минимальный заказ: 5000 ₽</p></div>
-    <div class="car"><p>Доставка: бесплатно</p></div>
-  </div>
-</div>
-<div class="grid1">
-  <div class="fries">
-    <img src="img/fries.png" alt="fries">
-    <h3>Чипсы, 50гр</h3>
-    <span>Вкус: соль.</span>
-    <h5>120 ₽</h5>
-  </div>
-  <div class="straw">
-    <img src="img/straw.png" alt="strawberry">
-    <h3>Клубника, 50гр</h3>
-    <span>Кусочками.</span>
-    <h5>250 ₽</h5>
-  </div>
-  <div class="hamon">
-    <img src="img/hamon.png" alt="hamon">
-    <h3>Печеный хумус с бастурмой, 60гр</h3>
-    <span>Нут, тахини, винный уксус, кумин, паприка, бастурма.</span>
-    <h5 class="cr">200 ₽</h5>
-  </div>
-  <div class="croasante">
-    <img src="img/croiss.png" alt="croissant">
-    <h3>Круассаны, 70гр</h3>
-    <span>Сливочный сыр, копченый лосось, лисонный сок.</span>
-    <h5 class="cr">170 ₽</h5>
-  </div>
-</div>
 </body>
 </html>
